@@ -4,15 +4,8 @@ using UnityEngine;
 
 public class SelectedCharacter : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public void CharacterSelected(string CharacterSelected)
     {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }
