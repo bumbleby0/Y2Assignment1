@@ -7,6 +7,7 @@ using UnityEngine;
 public class ErishikgalStats : ScriptableObject
 {
     [Header("Erishikgal Base Stats")]
+    public string ErishikgalName = "Erishikgal";
     public int MaxHealth = 150;
     public int MeleeAttack = 25;
     public int RangedAttack = 4;
@@ -19,8 +20,8 @@ public class ErishikgalStats : ScriptableObject
     public int DamageReguctionPercent = 5;
     public int Speed = 95;
 
-    [Header("Erishikgal Currwnt Stats")]
-    public int CurrentHealth;
+    [Header("Erishikgal Current Stats")]
+    public int CurrentHealth = 150;
 
 
     [Header("Erishikgal Level Up Stats")]
