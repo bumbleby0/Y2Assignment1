@@ -1468,7 +1468,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12eb5bc043e5e78479c0e37621050c80, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SelectedCharater: 0
 --- !u!4 &1837290802
 Transform:
   m_ObjectHideFlags: 0
@@ -1722,7 +1721,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 886f0078b1d628144be983620f96d9fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CharacterForThisButton: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
