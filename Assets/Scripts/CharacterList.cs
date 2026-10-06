@@ -4,6 +4,7 @@ using UnityEngine;
 
 public enum CharacterList
 {
-    Erishikgal,
+
+ Erishikga = 1, 
     // Add other character types here
 }
