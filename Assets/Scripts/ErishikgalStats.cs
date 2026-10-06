@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "ErishikgalStats", menuName = "ScriptableObjects/ErishikgalStats", order = 1)]
 public class ErishikgalStats : ScriptableObject
 {
     [Header("Erishikgal Base Stats")]

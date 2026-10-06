@@ -9,5 +9,5 @@ public enum CharacterList
  Frederick = 2,
  Ezikiel = 3,
  Miranda = 4,
-    // Add other character types here
+ // Add other character types here
 }

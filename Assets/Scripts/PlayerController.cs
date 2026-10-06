@@ -10,14 +10,13 @@ public class PlayerController : MonoBehaviour
 
     Vector2 movement; 
 
-
-    // Update is called once per frame
-
     void Update()
     {
         // Movement Input
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
+        // SelectedCharacter Stat
+        
 
     }
 
