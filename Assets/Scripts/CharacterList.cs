@@ -5,6 +5,9 @@ using UnityEngine;
 public enum CharacterList
 {
 
- Erishikga = 1, 
+ Erishikgal = 1, 
+ Frederick = 2,
+ Ezikiel = 3,
+ Miranda = 4,
     // Add other character types here
 }

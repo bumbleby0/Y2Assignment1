@@ -21,7 +21,7 @@ public class CharacterSelector : MonoBehaviour
 
     string CharacterSelect;
 
-    public void ChangeSCharactere(int characterName)
+    public void ChangeCharacter(int characterName)
     {
         // Select Character
 
@@ -35,7 +35,14 @@ public class CharacterSelector : MonoBehaviour
                 // code block
                 CharacterSelect = Enum.GetNames(typeof(CharacterList))[2];
                 break;
-
+            case 3:
+                // code block
+                CharacterSelect = Enum.GetNames(typeof(CharacterList))[3];
+                break;
+            case 4:
+                // code block
+                CharacterSelect = Enum.GetNames(typeof(CharacterList))[4];
+                break;
 
             default:
                 // code block
