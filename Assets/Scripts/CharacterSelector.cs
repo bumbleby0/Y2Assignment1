@@ -7,18 +7,6 @@ using UnityEngine.SceneManagement;
 
 public class CharacterSelector : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     string CharacterSelect;
 
     public void ChangeCharacter(int characterName)
@@ -46,6 +34,7 @@ public class CharacterSelector : MonoBehaviour
 
             default:
                 // code block
+                CharacterSelect = Enum.GetNames(typeof(CharacterList))[2];
                 break;
         }
 
