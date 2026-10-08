@@ -1,3 +1,4 @@
+using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -12,7 +13,13 @@ public class PlayerController : MonoBehaviour
 
     private void Start()
     {
-        string chosen = PlayerPrefs.GetString("ChosenCharater", "Erishikgal");
+        string chosen = PlayerPrefs.GetString("ActiveCharacter");
+        if (chosen == "Erishikgal" )
+        {
+            
+        }
+
+
 
     }
     void Update()
