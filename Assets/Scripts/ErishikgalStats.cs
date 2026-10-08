@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class ErishikgalStats : ScriptableObject
+public class ErishikgalStats : MonoBehaviour
 {
     [Header("Erishikgal Base Stats")]
     public string ErishikgalName = "Erishikgal";
@@ -16,7 +16,7 @@ public class ErishikgalStats : ScriptableObject
     public int CriticalHitChance = 10;
     public int CriticalHitMultiplier = 75;
     public int Defense = 10;
-    public int DamageReguctionPercent = 5;
+    public int DamageReductionPercent = 5;
     public int Speed = 95;
 
     [Header("Erishikgal Current Stats")]
@@ -25,7 +25,6 @@ public class ErishikgalStats : ScriptableObject
 
     [Header("Erishikgal Level Up Stats")]
     public int HealthIncreasePerLevel = 15;
-    public int damageIncreasePerLevel = 5;
 
     [Header("Erishikgal Weapon Level Up Stats")]
     public int MeleeAttackIncreasePerLevel = 5;

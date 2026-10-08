@@ -1983,6 +1983,10 @@ GameObject:
   - component: {fileID: 1633199118}
   - component: {fileID: 1633199117}
   - component: {fileID: 1633199119}
+  - component: {fileID: 1633199121}
+  - component: {fileID: 1633199120}
+  - component: {fileID: 1633199123}
+  - component: {fileID: 1633199122}
   m_Layer: 0
   m_Name: PlayerCharacter
   m_TagString: Untagged
@@ -2099,6 +2103,126 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1633199120
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1633199115}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a220f548b39d1af4e87f4b4b3a2b5e15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EzikielName: Ezikiel
+  MaxHealth: 130
+  MeleeAttack: 30
+  RangedAttack: 30
+  RangedAttackCount: 1
+  DamageMultiplier: 1
+  DefenseIgnorePercent: 0
+  CriticalHitChance: 7
+  CriticalHitMultiplier: 60
+  Defense: 7
+  DamageReductionPercent: 0
+  Speed: 95
+  CurrentHealth: 130
+  HealthIncreasePerLevel: 10
+  MeleeAttackIncreasePerLevel: 5
+  RangedAttackIncreasePerLevel: 5
+  IsArmGone: 0
+  HasAmulet: 0
+--- !u!114 &1633199121
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1633199115}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 212345abbc7d63b4e8c18ba82fd50f18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ErishikgalName: Erishikgal
+  MaxHealth: 150
+  MeleeAttack: 25
+  RangedAttack: 4
+  RangedAttackCount: 6
+  DamageMultiplier: 1
+  DefenseIgnorePercent: 5
+  CriticalHitChance: 10
+  CriticalHitMultiplier: 75
+  Defense: 10
+  DamageReductionPercent: 5
+  Speed: 95
+  CurrentHealth: 150
+  HealthIncreasePerLevel: 15
+  MeleeAttackIncreasePerLevel: 5
+  RangedAttackIncreasePerLevel: 2
+  IsArmGone: 0
+  HasAmulet: 0
+--- !u!114 &1633199122
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1633199115}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 556775ac2de1a2641bd5346efcdd717c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FrederickName: Frederick
+  MaxHealth: 200
+  MeleeAttack: 40
+  RangedAttack: 0
+  RangedAttackCount: 0
+  DamageMultiplier: 1
+  DefenseIgnorePercent: 0
+  CriticalHitChance: 1
+  CriticalHitMultiplier: 50
+  Defense: 15
+  DamageReductionPercent: 10
+  Speed: 50
+  CurrentHealth: 200
+  HealthIncreasePerLevel: 10
+  MeleeAttackIncreasePerLevel: 10
+  RangedAttackIncreasePerLevel: 0
+  IsArmGone: 0
+  HasAmulet: 0
+--- !u!114 &1633199123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1633199115}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61fc92ea54abfd440bdce7d1e4ffa441, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MirandaName: Miranda
+  MaxHealth: 90
+  MeleeAttack: 5
+  RangedAttack: 40
+  RangedAttackCount: 1
+  DamageMultiplier: 1
+  DefenseIgnorePercent: 10
+  CriticalHitChance: 15
+  CriticalHitMultiplier: 100
+  Defense: 5
+  DamageReductionPercent: 0
+  Speed: 110
+  CurrentHealth: 90
+  HealthIncreasePerLevel: 5
+  MeleeAttackIncreasePerLevel: 1
+  RangedAttackIncreasePerLevel: 10
+  IsArmGone: 0
+  HasAmulet: 0
 --- !u!1 &1725578245
 GameObject:
   m_ObjectHideFlags: 0
