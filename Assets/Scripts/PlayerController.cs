@@ -8,8 +8,13 @@ public class PlayerController : MonoBehaviour
 
     public Rigidbody2D rb;
 
-    Vector2 movement; 
+    Vector2 movement;
 
+    private void Start()
+    {
+        string chosen = PlayerPrefs.GetString("ChosenCharater", "Erishikgal");
+
+    }
     void Update()
     {
         // Movement Input

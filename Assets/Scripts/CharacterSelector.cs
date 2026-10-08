@@ -7,7 +7,10 @@ using UnityEngine.SceneManagement;
 
 public class CharacterSelector : MonoBehaviour
 {
+    public string ActiveCharacter;
+
     string CharacterSelect;
+
 
     public void ChangeCharacter(int characterName)
     {
@@ -18,6 +21,8 @@ public class CharacterSelector : MonoBehaviour
             case 1:
                 // code block
                 CharacterSelect = Enum.GetNames(typeof(CharacterList))[1];
+                ActiveCharacter = "Erishikgal";
+                PlayerPrefs.SetString("Active Character",ActiveCharacter);
                 break;
             case 2:
                 // code block
