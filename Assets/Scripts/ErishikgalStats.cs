@@ -31,6 +31,7 @@ public class ErishikgalStats : MonoBehaviour
     public int RangedAttackIncreasePerLevel = 2;
 
     [Header("Erishikgal Event Flags")]
+    public bool IsActiveCharacter = false;
     public bool IsArmGone = false;
     public bool HasAmulet = false;
 }

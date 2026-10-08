@@ -30,6 +30,7 @@ public class EzikielStats : MonoBehaviour
     public int RangedAttackIncreasePerLevel = 5;
 
     [Header("Ezikiel Event Flags")]
+    public bool IsActiveCharacter = false;
     public bool IsArmGone = false;
     public bool HasAmulet = false;
 }

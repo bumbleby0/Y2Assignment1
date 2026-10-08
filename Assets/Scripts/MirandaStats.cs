@@ -30,6 +30,7 @@ public class MirandaStats : MonoBehaviour
     public int RangedAttackIncreasePerLevel = 10;
 
     [Header("Miranda Event Flags")]
+    public bool IsActiveCharacter = false;
     public bool IsArmGone = false;
     public bool HasAmulet = false;
 }

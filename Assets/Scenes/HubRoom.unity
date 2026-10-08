@@ -2051,6 +2051,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MoveSpeed: 5
   rb: {fileID: 1633199117}
+  ActiveCharacterStats: {fileID: 1633199121}
 --- !u!212 &1633199119
 SpriteRenderer:
   m_ObjectHideFlags: 0

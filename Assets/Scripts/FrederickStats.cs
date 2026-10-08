@@ -30,6 +30,7 @@ public class FrederickStats : MonoBehaviour
     public int RangedAttackIncreasePerLevel = 0;
 
     [Header("Frederick Event Flags")]
+    public bool IsActiveCharacter = false;
     public bool IsArmGone = false;
     public bool HasAmulet = false;
 }
