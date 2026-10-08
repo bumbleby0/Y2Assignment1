@@ -27,21 +27,27 @@ public class CharacterSelector : MonoBehaviour
             case 2:
                 // code block
                 CharacterSelect = Enum.GetNames(typeof(CharacterList))[2];
-                ActiveCharacter = "Ezikiel";
+                ActiveCharacter = "Frederick";
                 PlayerPrefs.SetString("Active Character", ActiveCharacter);
                 break;
             case 3:
                 // code block
                 CharacterSelect = Enum.GetNames(typeof(CharacterList))[3];
+                ActiveCharacter = "Ezikiel";
+                PlayerPrefs.SetString("Active Character", ActiveCharacter);
                 break;
             case 4:
                 // code block
                 CharacterSelect = Enum.GetNames(typeof(CharacterList))[4];
+                ActiveCharacter = "Miranda";
+                PlayerPrefs.SetString("Active Character", ActiveCharacter);
                 break;
 
             default:
                 // code block
                 CharacterSelect = Enum.GetNames(typeof(CharacterList))[2];
+                ActiveCharacter = "Frederick";
+                PlayerPrefs.SetString("Active Character", ActiveCharacter);
                 break;
         }
 
