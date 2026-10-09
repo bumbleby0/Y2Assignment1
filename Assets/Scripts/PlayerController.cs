@@ -29,8 +29,6 @@ public class PlayerController : MonoBehaviour
         // Movement Input
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
-        // SelectedCharacter Stat
-
     }
 
     void FixedUpdate()
