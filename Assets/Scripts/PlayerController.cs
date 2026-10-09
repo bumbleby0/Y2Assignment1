@@ -34,18 +34,26 @@ public class PlayerController : MonoBehaviour
     }
     private void Start()
     {
-        // Get the chosen character name (defaults to "Erishikgal" if empty)
+        // 1. Get the character name from PlayerPrefs
         string loadedCharacter = PlayerPrefs.GetString("ActiveCharacter", "Erishikgal");
 
         if (!string.IsNullOrEmpty(loadedCharacter))
         {
-            loadedCharacter = loadedCharacter.Trim(); // Removes potential whitespace bugs
+            // 2. Clean the string to prevent hidden space bugs
+            loadedCharacter = loadedCharacter.Trim();
 
-            if (loadedCharacter == "Erishikgal" && iconsParent != null)
+            if (iconsParent != null)
             {
-                // transform.Find looks through INACTIVE children. 
-                Transform characterTransform = iconsParent.transform.Find("Erishikgal");
+                // 3. Search for the character dynamically using the variable name
+                Transform characterTransform = iconsParent.transform.Find(loadedCharacter);
 
+                // 4. Fallback: If it fails, check if the object has a trailing space in the Hierarchy
+                if (characterTransform == null)
+                {
+                    characterTransform = iconsParent.transform.Find(loadedCharacter + " ");
+                }
+
+                // 5. Activate the character if found
                 if (characterTransform != null)
                 {
                     characterTransform.gameObject.SetActive(true);
@@ -53,22 +61,7 @@ public class PlayerController : MonoBehaviour
                 }
                 else
                 {
-                    Debug.LogError("Could not find child named 'Erishikgal ' inside Icons.");
-                }
-            }
-            if (loadedCharacter == "Frederick" && iconsParent != null)
-            {
-                // transform.Find looks through INACTIVE children. 
-                Transform characterTransform = iconsParent.transform.Find("Frederick");
-
-                if (characterTransform != null)
-                {
-                    characterTransform.gameObject.SetActive(true);
-                    Debug.Log("Successfully activated:" + characterTransform.name);
-                }
-                else
-                {
-                    Debug.LogError("Could not find child named 'Frederick ' inside Icons.");
+                    Debug.LogError($"Could not find a child named '{loadedCharacter}' or '{loadedCharacter} ' inside Icons.");
                 }
             }
         }
@@ -77,6 +70,7 @@ public class PlayerController : MonoBehaviour
             Debug.Log("No Prefs");
         }
     }
+
     void Update()
     {
         // Movement Input
