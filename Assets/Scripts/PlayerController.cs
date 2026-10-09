@@ -64,7 +64,7 @@ public class PlayerController : MonoBehaviour
                 if (characterTransform != null)
                 {
                     characterTransform.gameObject.SetActive(true);
-                    Debug.Log("Successfully activated: " + characterTransform.name);
+                    Debug.Log("Successfully activated:" + characterTransform.name);
                 }
                 else
                 {
