@@ -10,40 +10,72 @@ public class PlayerController : MonoBehaviour
 
     public Rigidbody2D rb;
 
+    private GameObject iconsParent;
+
     Vector2 movement;
 
     private void Awake()
     {
-        // Set all Characters to false to prevent errors
         // Find the parent GameObject
-        GameObject parent = GameObject.Find("Icons");
+        iconsParent = GameObject.Find("Icons");
 
-        if (parent != null)
+        if (iconsParent != null)
         {
-            // Loop through each child transform inside the parent
-            foreach (Transform child in parent.transform)
+            // Loop through each child transform inside the parent and disable them
+            foreach (Transform child in iconsParent.transform)
             {
                 child.gameObject.SetActive(false);
             }
         }
         else
         {
-            Debug.LogError("Could not find the 'icons' GameObject.");
+            Debug.LogError("Could not find the 'Icons' GameObject.");
         }
     }
     private void Start()
     {
-        //toggle selected characters stats and sprite as active
-        string loadedCharacter = PlayerPrefs.GetString("ActiveCharacter","Erishikgal");
-        if (loadedCharacter == "Erishikgal")
+        // Get the chosen character name (defaults to "Erishikgal" if empty)
+        string loadedCharacter = PlayerPrefs.GetString("ActiveCharacter", "Erishikgal");
+
+        if (!string.IsNullOrEmpty(loadedCharacter))
         {
-            GameObject.Find(loadedCharacter).SetActive(true);
+            loadedCharacter = loadedCharacter.Trim(); // Removes potential whitespace bugs
+
+            if (loadedCharacter == "Erishikgal" && iconsParent != null)
+            {
+                // transform.Find looks through INACTIVE children. 
+                Transform characterTransform = iconsParent.transform.Find("Erishikgal");
+
+                if (characterTransform != null)
+                {
+                    characterTransform.gameObject.SetActive(true);
+                    Debug.Log("Successfully activated: " + characterTransform.name);
+                }
+                else
+                {
+                    Debug.LogError("Could not find child named 'Erishikgal ' inside Icons.");
+                }
+            }
+            if (loadedCharacter == "Frederick" && iconsParent != null)
+            {
+                // transform.Find looks through INACTIVE children. 
+                Transform characterTransform = iconsParent.transform.Find("Frederick");
+
+                if (characterTransform != null)
+                {
+                    characterTransform.gameObject.SetActive(true);
+                    Debug.Log("Successfully activated: " + characterTransform.name);
+                }
+                else
+                {
+                    Debug.LogError("Could not find child named 'Frederick ' inside Icons.");
+                }
+            }
         }
-        
-
-
-
-
+        else
+        {
+            Debug.Log("No Prefs");
+        }
     }
     void Update()
     {
