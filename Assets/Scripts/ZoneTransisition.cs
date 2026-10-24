@@ -12,6 +12,7 @@ public class ZoneTransisition : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             UnityEngine.SceneManagement.SceneManager.LoadScene(SceneToLoad);
+            Debug.Log("Loading scene: " + SceneToLoad);
         }
     }
 
